@@ -1,0 +1,40 @@
+body {
+    margin: 0px;
+}
+
+#main {
+    width: 100vw;
+    margin: 0px;
+    position: absolute;
+    z-index: 0;
+}
+
+.shape {
+    /*background-color: blue;*/
+    height: 8px;
+    width: 8px;
+    margin: 0px;
+    position: absolute;
+    z-index: 1;
+}
+
+.shape div {
+    height: 8px;
+    width: 8px;
+}
+
+.shape img {
+    width: 500px;
+    border: thick double white;
+    border-width: 10px;
+    box-shadow: black;
+    z-index: 2;
+}
+
+.img-hidden {
+    overflow: hidden;
+}
+
+.img-visible {
+    overflow: visible;
+}
