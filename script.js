@@ -1,6 +1,7 @@
 'use strict';
 
 const url = window.URL || window.webkitURL;
+const shapeSize = $('.shape').width();
 const closeAll = function(){
     $('.img-visible').each(function(){
         if($(this).children('img').length === 0){
@@ -16,29 +17,29 @@ $('.shape').on('mouseenter touchstart', function () {
     // $(this).children('img').attr('src', $(this).children('img').attr('data-img-file'));
     const thisTop = parseFloat($(this).css('top').split('px')[0]);
     const thisLeft = parseFloat($(this).css('left').split('px')[0]);
-    const thisHeight = $(this).children('img').height() + 8;
+    const thisHeight = $(this).children('img').height() + shapeSize;
     const thisWidth = $(this).children('img').width();
 
     if(thisTop > 618 && thisLeft < 618){
         $(this).children('img').insertAfter($(this));
         $(this).next().width(thisWidth);
-        $(this).next().height(thisHeight - 8);
+        $(this).next().height(thisHeight - shapeSize);
         $(this).next().css('position', 'absolute');
         $(this).next().css('left', `${thisLeft}px`);
-        $(this).next().css('top', `${thisTop - thisHeight + 8}px`);
+        $(this).next().css('top', `${thisTop - thisHeight + shapeSize}px`);
     }
     if(thisTop > 618 && thisLeft > 618){
         $(this).children('img').insertAfter($(this));
         $(this).next().width(thisWidth);
-        $(this).next().height(thisHeight - 8);
+        $(this).next().height(thisHeight - shapeSize);
         $(this).next().css('position', 'absolute');
         $(this).next().css('left', `${thisLeft - thisWidth}px`);
-        $(this).next().css('top', `${thisTop - thisHeight + 8}px`);
+        $(this).next().css('top', `${thisTop - thisHeight + shapeSize}px`);
     }
     if(thisTop < 618 && thisLeft > 618){
         $(this).children('img').insertAfter($(this));
         $(this).next().width(thisWidth);
-        $(this).next().height(thisHeight - 8);
+        $(this).next().height(thisHeight - shapeSize);
         $(this).next().css('position', 'absolute');
         $(this).next().css('left', `${thisLeft - thisWidth}px`);
         $(this).next().css('top', `${thisTop}px`);

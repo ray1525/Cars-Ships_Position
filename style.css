@@ -16,16 +16,16 @@ body {
 .shape {
     /*background-color: blue;*/
     display: none;
-    height: 8px;
-    width: 8px;
+    height: 15px;
+    width: 15px;
     margin: 0px;
     position: absolute;
     z-index: 1;
 }
 
 .shape div {
-    height: 8px;
-    width: 8px;
+    height: 15px;
+    width: 15px;
 }
 
 .shape img {
