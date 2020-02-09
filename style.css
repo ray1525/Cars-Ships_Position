@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    background-color: #bdc3c7;
+    background-color: black;
 }
 
 #main {
@@ -56,6 +56,7 @@ body {
     margin-top: 25vh;
     margin-bottom: 25vh;
     font-size: 2em;
+    color: white;
 }
 
 #progress {
@@ -68,6 +69,7 @@ body {
     border-radius: 50%;
     animation: rotation 1s;
     animation-iteration-count: infinite;
+    border: solid red 1px;
 }
 
 @keyframes rotation {
