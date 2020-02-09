@@ -11,9 +11,9 @@ $('#main').on('mouseenter touchstart', function () {
     $('.shape').addClass('img-hidden');
 });
 
-$('body').mousemove(function (event) {
+/*$('body').mousemove(function (event) {
     console.log(`left: ${event.pageX-4}px; top: ${event.pageY-4}px;`);
-});
+});*/
 
 /*let lastMainW = 1237;
 const fixPosition = function () {
