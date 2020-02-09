@@ -1,6 +1,7 @@
 'use strict';
 
 $('.shape').on('mouseenter touchstart', function () {
+    $(this).children('img').attr('src', $(this).children('img').attr('data-img-file'));
     $(this).removeClass('img-hidden');
     $(this).addClass('img-visible');
 });
@@ -11,10 +12,10 @@ $('#main').on('mouseenter touchstart', function () {
 });
 
 $('body').mousemove(function (event) {
-    // console.log(`left: ${event.pageX-4}px; top: ${event.pageY-4}px;`);
+    console.log(`left: ${event.pageX-4}px; top: ${event.pageY-4}px;`);
 });
 
-let lastMainW = 1237;
+/*let lastMainW = 1237;
 const fixPosition = function () {
     let mainW = $('#main').width();
     // let winH = $(window).height();
@@ -38,3 +39,4 @@ fixPosition();
 $(window).resize(function () {
     fixPosition();
 });
+*/
