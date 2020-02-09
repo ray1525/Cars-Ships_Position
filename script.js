@@ -1,7 +1,7 @@
 'use strict';
 
 $('.shape').on('mouseenter touchstart', function () {
-    $(this).children('img').attr('src', $(this).children('img').attr('data-img-file'));
+    // $(this).children('img').attr('src', $(this).children('img').attr('data-img-file'));
     $(this).removeClass('img-hidden');
     $(this).addClass('img-visible');
 });
