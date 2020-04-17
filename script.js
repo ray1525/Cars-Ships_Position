@@ -109,5 +109,6 @@ $('.shape').each(function (i) {
             $('#main').css('display', 'block');
             $('.shape').css('display', 'block');
         }
+        $('#progressArea').hide();
     });
 });
