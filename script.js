@@ -108,7 +108,7 @@ $('.shape').each(function (i) {
         if(progress === 100){
             $('#main').css('display', 'block');
             $('.shape').css('display', 'block');
+            $('#progressArea').hide();
         }
-        $('#progressArea').hide();
     });
 });
