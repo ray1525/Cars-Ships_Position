@@ -1,6 +1,24 @@
 body {
     margin: 0px;
     background-color: black;
+    color: #F5F5F7;
+}
+
+nav a, a:link, a:visited, a:active, span {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #F5F5F7;
+}
+
+nav a:hover {
+    color: white;
+}
+
+nav {
+    padding: 0px;
+    margin-top: 12px;
+    height: 25px;
+    background-color: grey;
 }
 
 #main {
@@ -10,7 +28,7 @@ body {
     position: absolute;
     z-index: 1;
     left: 0px;
-    top: 0px;
+    top: 50px;
 }
 
 .shape {
@@ -61,7 +79,6 @@ body {
 
 #progress {
     font-size: 1em;
-
 }
 
 #icon {
